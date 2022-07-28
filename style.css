@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px auto;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  width: 375px;
+  margin: 20px auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .img {
+  width: 100%;
+  height: 250px;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+}
+
+.container .wrapper {
+  padding: 20px 30px;
+}
+
+.wrapper .text-component h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+
+.wrapper .text-component h1 {
+  font-family: "Fraunces", serif;
+  padding-bottom: 15px;
+  color: hsl(212, 21%, 14%);
+}
+
+.wrapper .text-component p {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+.wrapper .text-component .price {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .text-component .price .price-current {
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%);
+}
+
+.wrapper .text-component .price .price-discount {
+  text-decoration: line-through;
+  font-size: 12px;
+  letter-spacing: normal;
+}
+
+.wrapper .btn {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.wrapper .btn:hover {
+  background-color: hsl(158, 36%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.wrapper .btn i {
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 200px auto;
+    width: 615px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .container .img {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .wrapper .text-component {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin: 200px auto;
+  }
+}
